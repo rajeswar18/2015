@@ -111,10 +111,10 @@
 <td>8:30 AM- 10:00 AM</td>
 <td>Session I </td>
 <td> <ul>
-	<li>Quick review of parallel programming with OpenMP</li>
+	<li>Review of shared-memory parallel programming with OpenMP</li>
 	<li>Introducing GPU architecture</li>
-	<li>SIMT model </li>
 	<li>Different types of memory on GPU Multidimensional thread space </li>
+	<li>Introduction to CUDA programming</li>
      </ul></td>
 </tr>
 
@@ -127,16 +127,20 @@
 <tr>
 <td>10:30 AM- 12:00 PM</td>
 <td>Session II </td>
-<td> 
+<td> 1hour 10 min (lecture) + 20 min (hands-on)
 	<ul>
-		<li>GPU performance aspects: </li>
-		<li>Warp scheduling, Memory coalescing to efficient Global memory access</li>
-		<li>Approaches to tolerate memory latency</li>
-		<li>Emphasize the differences in loop optimizations between CPU and GPU </li>
-		<li>(Forms of the loops in the CUDA reverse of OpenMP [stride 1 vs. stride N]), Filling the blanks variety (understand the variety) old exercises. (Different variants of reversing the arrays)</li>
-		<li>Hands-on: simple examples – Hello World GPU example (hello world or some data parallel examples)</li>
+		<li>Scheduling and synchronization on GPUs</li>
+		<li>Fundamental factors affecting performance:</li>
+		<ul>
+			<li>Coalesced global memory access</li>
+			<li>Warp occupancy to tolerate global memory latency</li>
+			<li>Contrast in loop optimizations for CPU versus GPU</li>	
+			<li>(Forms of the loops in the CUDA reverse of OpenMP [stride 1 vs. stride N])</li>
 			
+		</ul>	
+		
 	</ul>
+	<b>Hands-on exercises</b>
 </td>
 </tr>
 
@@ -149,12 +153,15 @@
 <tr>
 <td>1:00 PM- 2:30 PM</td>
 <td>Session III</td>
-<td> Optimizations for Shared memory. (Reuse in shared memory as much as possible). Are these optimizations still crucial considering the CPU like memory hierarchy in recent GPUs
-<b>(1hour lecture + 1/2 hour exercise)</b>
-
+<td> 1hour (lecture) + 30 min (hands-on exercises)
+	<ul>
+		<li>GPU performance optimization</li>
+		<li>Reduction of global memory accesses via shared memory or caching Thread coarsening</li>
+		<li>Choice of effective grid/thread-block size/shape Illustrative examples of performance optimization </li>
+	</ul>
+	<b>Hands-on exercises</b>
  </td>
 </tr>
-
 
 <tr>
 <td>2:30 PM- 3:00 PM</td>
@@ -166,11 +173,13 @@
 <tr>
 <td>3:00 PM- 4:30 PM</td>
 <td>Session IV </td>
-<td> <ul> <li> Thread divergence. </li>
-	  <li> 	simple exercise - stencils. </li>
-	  <li>Do extra work in order to reduce the thread divergence.</li>
-      </ul>
-
+<td>  <b>GPU performance optimization</b>
+	<ul> 
+	 	<li> Minimum Thread divergence. </li>
+	  	<li> Avoiding bank conflicts</li>
+	  	<li>Illustrative examples of performance optimization</li>
+      	</ul>
+	<b>Hands-on exercises</b>
 </td>
 </tr>
 
@@ -182,12 +191,12 @@
                             			
 <strong> Instructor: </strong> <br> <br>
 <img align = "left" src="https://cloud.githubusercontent.com/assets/16099374/11554165/8c423e20-99bb-11e5-8c9c-b67acf48c0ce.jpg" height = "125" width = "125" alt="Swami"> <br>
-<strong><a href="http://web.cse.ohio-state.edu/~saday/" target="_blank">Prof. P Sadayappan </a> </strong>&nbsp;
+<strong><a href="http://web.cse.ohio-state.edu/~saday/" target="_blank">Prof. P Sadayappan</a> </strong>&nbsp;
 <p style="TEXT-ALIGN: justify">Professor, Computer Science & Engineering  </p>
 <p style="TEXT-ALIGN: justify">Ohio State University </p>
 <br>
 <img align = "left" src="https://cloud.githubusercontent.com/assets/16099374/11563954/8feec958-99fc-11e5-994d-30f5913cf507.jpg" height = "125" width = "125" alt="Swami"> <br>
-<strong><a href="https://www.linkedin.com/in/sudheer-kumar-61032270" target="_blank"> Devi Sudheer Kumar </a> </strong>&nbsp;
+<strong><a href="https://www.linkedin.com/in/sudheer-kumar-61032270" target="_blank">Devi Sudheer Kumar</a> </strong>&nbsp;
 <p style="TEXT-ALIGN: justify">IBM Research, Delhi, India </p>
 <br/> <br/>
 <strong> Email for communication: iscsgpu@googlegroups.com</strong> 
