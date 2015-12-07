@@ -27,13 +27,14 @@ body {
 	text-align: center;
     width: 100%;
     height: 300px;
-    background-image: url("https://cloud.githubusercontent.com/assets/16099374/11561517/fdce7f68-99ed-11e5-9828-9be23f6f0331.jpg");
-    background-position: 615px 0px, top;
+    background-image: url("C:/Users/pipanigr/Desktop/SSSIHL.jpg");
+    background-size: 1200px 300px;
+    background-position: 315px 0px, top;
     background-repeat: no-repeat, no-repeat;
     background-origin: border-box, border-box;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
-    border-radius: 0.5em;
+    border-radius: 0.0em;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -72,12 +73,13 @@ body {
     position: relative;
     display: block;
     float: left;
-    width: 20%;
+    width: 18%;
     float: left;
-    margin-left: 0px;
-    margin-top: 10px;
+    margin-left: 315px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    padding: 10px;
+
+    padding: 0px;
     background-color: #FF9966;
     font-size: 100%;
     -webkit-border-radius: 0.5em;
@@ -118,9 +120,10 @@ body {
     padding: 0;
     border: 0;
     float: right;
-    width: 74%;
+    width: 76%;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 7px;
     padding: 10px;
     padding-left: 20px;
     background-color: #EEEEEE;
